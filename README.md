@@ -20,9 +20,7 @@ Getting Flutter Installed
 10.Download Xcode 
 11. Run xcode commands 
 12. sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 
-
 sudo xcodebuild -runFirstLaunch 
-
 13.open -a simulator 
 14.Fix android simulator 
  
@@ -72,6 +70,5 @@ Analyzing the First_App
 How programming language work 
 1.See words a bunch of words 
 2.Run Flutter 
-	>Flutter: Launch Emulator 
+>Flutter: Launch Emulator 
 3.Main Dart void main() 
-4.
