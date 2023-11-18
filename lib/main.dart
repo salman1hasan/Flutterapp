@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     // also learn about many other widgets!
     return MaterialApp(
       title: 'Flutter First App',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
