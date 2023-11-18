@@ -1,13 +1,6 @@
 Salman Hasan 
 11/17/2023 
  
-My main goal in life | Build as much as I can for UNGUARDED so this way, I can create an empire and leave it behind for my family when I get married and have kids. (Family and I) 
-My religious views | Islam  
-Reason Why | Own D&B Numbers and own UNGUARDED and own a revenue route UNGUARDED Sticker.  
-Scaleable Consideration | Saudi Arabia [Direct me to investors and align me to the right place need be].  
-Where is my revenue going | Tech [Someone who can build the app out for me] (App Agency) [Regardless religion and race best person for the job here]  
- 
-Main Goal | Generate revenue and/or get a job 
  
 1 year development [Learn about flutter for one year]  
  
