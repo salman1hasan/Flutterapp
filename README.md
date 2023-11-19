@@ -1,11 +1,23 @@
 Salman Hasan 
 11/17/2023 
  
- 
 1 year development [Learn about flutter for one year]  
  
 Flutter Development [Web development, iPhone, Android Development]- 301 days (about 10 months) 
 Helps me create templates and think of concepts that I can use in the future. Cross dimensional app so this helps me generate an app on both iOS and android and maybe when I'm 35 I can have an app on android and apple 
+ 
+Jobs I can work 
+Full Stack Developer  
+Web 3.0/NextJS/ReactJS/React Native/Flutter/etc... 
+ 
+UNGUARDED 
+Business [Marketing/Supply chain/Finance etc.] 
+Content Creator [Start to finish] 
+Basketball Trainer/Lifting Trainer 
+ 
+ 
+ 
+ 
  
 Getting Flutter Installed  
 1.Click MacOS  
@@ -20,55 +32,125 @@ Getting Flutter Installed
 10.Download Xcode 
 11. Run xcode commands 
 12. sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 
-sudo xcodebuild -runFirstLaunch 
-13.open -a simulator 
-14.Fix android simulator 
+ 
+Flutter and Dart 
+1.Delete all the content that’s inside of it 
+2.runApp(); -> Function [Are functions that can simply be executed in your code] (Idea is to show some function in the screen) 
+3.A function body must be present to make it work 
+4.Must create a music construction and type void main() { [Custom function a custom instruction] 
+ 
+} 
+5. Defining a function and then execute a calling a function 
+6. Void main() { 
+ 
+} [Defining a function] 
+ 
+runApp(); -Executing calling a function 
+7.Flutter is an open source project so you can inspect its code 
+8.main(); 
+9. Function Definition 
+ Functions “Code on demand”  
+void doSomething(){ [function definition] 
+ 
+} 
+10.  Function Usage 
+Void main(){ 
+	doSomething() 
+	doSomething() 
+	 
+} 
+11. Function Name [Identifier] 
+12. Functions can be used (“called”) in your code as often as needed 
+ 
+What's the most important folder, in which you'll work most of the time, in a Flutter project? 
+The “Lib” Folder, this folder contains the .dart code file to get the code going 
+ 
+Which file is the entry point for a Flutter application? 
+Lib/main.dart 
+ 
+What is the main purpose of the Dart compiler? 
+Convert Dart code into machine code that can run on various platforms 
+ 
+What are functions in programming? 
+A sequence of instructions that perform a specific task 
+ 
+How do you import a package in a Dart file? 
+Import “package_name”  
+ 
+Which key "elements" are involved in the startup process of drawing a UI onto the device screen? 
+The main function and the run app function 
+main() is executed automatically by Dart, runApp() tells flutter which application to draw oto the screen  
+ 
+Functions & Parameters 
+Functions may take input values – so –called “Parameters” or “Arguments” 
+ 
+No Parameters-> void main() 
+1 Parameter-> void print(text) 
+2 Parameter-> void A 
+ 
+Understanding Widgets 
+import ‘Package: flutter/material.dart’ 
+void main() { 
+        runApp() 
+} 
  
  
-Project Creation/Code Editor 
-1.Create a flutter folder 
-2.Open terminal with new folder  
-3.Create folder cd first_app 
-4.Open VS Code/Download VS Code 
-5.Open folder 
-6.Go to extensions view and install flutter 
+How 
  
-Running a flutter app 
-1.Go to lib and go to main.dart 
-2.Command Pallete 
-3.Launch Emulator on android 
-4.Apperance and add status bar 
-5.Run flutter without debugging 
+How flutter apps become active 
+1.Main() function gets executed autmatically 
+	By Dart, when executing the compiled app on the target device 
  
-Understand the Material Design 
-1.Google flexible design system 
-2.Get base styles and rules will always look nice 
-3.Highly customizable and extendable 
+2.runApp() should be called inside of main() 
+	runApp() “tells” flutter what to display on the screen (I.e which UI elements to display) 
  
-Dart & Flutter Fundamentals 
-1. Base syntax, core features & foundational concepts needed to build mobile app user interfaces 
+3.Pass the to-be-displayed “widget tree” to runApp() 
+	A “widget tree” is a combination of (nested). Flutter widgets that build the overall user interface 
  
-Advanced Features  
-1.Handling user interactions, customizing styles, building multi-screen 
+Flutter UI’s are built with the Widgets 
+When using Flutter, you build your user interface with code main() 
+runApp() should be called inside of main() runApp() tells flutter what to display on the screen which ui elements to display 
+Widget tree is a combination of (nested) flutter widgets that build the overall user interface 
  
-Beyond the Basics 
-1.Animating apps, connecting a backend, using native device features and more 
+Flutter UIs are built with widgets 
+When using flutter, you build your user interface with code.  
+A combination of widgets 
+Pass the to-be-displayed “widget tree” to runApp() 
  
-Analyzing the First_App 
-1.Use first flutter app 
-2. Have main. Dart as main file but can have more in libs 
-3. Android folders build folder and a bunch of folders that are relevent 
-4. Test widget_test.dart and add the library 
-5. Metadata add version: revision and add channel 
-6. Analysis_options.yaml  
-7. Ignore pubspec.yaml 
-8. Dart runs through main.dart and is parsed from top to bottom 
-9. Parsed and analyzed  
-10. Compiled by dart & flutter tools 
-11.Native ios or android machine code 
+By dart, when executing the compiled app on the target device 
+runApp() tells flutter what to display on the screen(I.e, which UI elements to display) 
+A widget tree is a combination of (nested) Flutter widgets that build the overall user interface 
  
-How programming language work 
-1.See words a bunch of words 
-2.Run Flutter 
->Flutter: Launch Emulator 
-3.Main Dart void main() 
+Flutter UIs are Built with widgets 
+When using flutter, you build your user interface with code 
+A combination of widgets 
+ 
+Widgets are nested into each other ->  
+	Center( 
+		child: Text(‘Hello World’), 
+	); 
+Built-in Center widget centers its content horizontal + vertically. Built-in text widget displays some text on the screen 
+ 
+MaterialApp 
+Scaffold 
+Row 
+Text-Text-Text 
+ 
+ 
+Its all about Widgets [Flutter UIs are created by combining & nesting Widgets] (OutlinedButton) [Text,start quiz]  
+ 
+OutinedButton 
+Text- Flutter provides many built in widgets 
+Start Quiz- You can also build your own widgets 
+ 
+ 
+Widget Catalog 
+25 functions that are widgets that can be used for flutter. Use core widgets of flutter  
+First widget that we need to pass runApp(MaterialApp)  
+use MaterialApp()  
+Classes are a dart and complex data structures like widgets 
+Void main() { 
+	runApp(MaterialApp()); 
+} 
+Creates a widget (a UI element – defined in code) 
+
