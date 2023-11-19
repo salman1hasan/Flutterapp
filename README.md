@@ -1,8 +1,4 @@
-Salman Hasan 
-11/17/2023 
-
-https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130480#overview
-1 year development [Learn flutter for one year]  
+1 year development [Learn about flutter for one year]  
  
 Flutter Development [Web development, iPhone, Android Development]- 301 days (about 10 months) 
 Helps me create templates and think of concepts that I can use in the future. Cross dimensional app so this helps me generate an app on both iOS and android and maybe when I'm 35 I can have an app on android and apple 
@@ -63,6 +59,7 @@ Void main(){
 11. Function Name [Identifier] 
 12. Functions can be used (“called”) in your code as often as needed 
  
+ 
 What's the most important folder, in which you'll work most of the time, in a Flutter project? 
 The “Lib” Folder, this folder contains the .dart code file to get the code going 
  
@@ -80,7 +77,7 @@ Import “package_name”
  
 Which key "elements" are involved in the startup process of drawing a UI onto the device screen? 
 The main function and the run app function 
-main() is executed automatically by Dart, runApp() tells flutter which application to draw oto the screen  
+main() is executed automatically by Dart, runApp() tells flutter which application to draw onto the screen  
  
 Functions & Parameters 
 Functions may take input values – so –called “Parameters” or “Arguments” 
@@ -92,11 +89,9 @@ No Parameters-> void main()
 Understanding Widgets 
 import ‘Package: flutter/material.dart’ 
 void main() { 
-        runApp() 
+runApp() 
 } 
  
- 
-How 
  
 How flutter apps become active 
 1.Main() function gets executed autmatically 
@@ -154,4 +149,56 @@ Void main() {
 	runApp(MaterialApp()); 
 } 
 Creates a widget (a UI element – defined in code) 
+ 
+void add(num1, num2){ -> Function Definition 
+	num1+ num2; 
+} 
+ 
+void demo(){ 
+	add(5,3);  -> Using(calling) the function with arguments(input values) 
+} 
+When you define functions.dart void runApp(Widget app)  
+void runApp Widget app(){ 
+	 
+} 
+ 
+Positional and Named Arguments 
+import ‘package: flutter/material.dart’ 
+void main() { 
+	runApp(MaterialApp()); 
+} 
+Need to pass more information to materialapp 
+What should pass to a widget app and positional argument 
+Looking at void add(num1, num2){ 
+	num1+ num2 
+} 
+This function has two parameters <- Comma-separated parameter list(a list of input values) 
+Define functions that take named parameters and named functions 
+When it comes to using the functions called it doesn’t matter what value you use them in 
+In the input  
+ 
+void main() { 
+	runApp(MaterialApp(home: )); 
+} 
+Add home: (Argument) 
+Which kind of widget or ui element are we working with home: Text()) 
+ 
+Deep Dive: Position & Named Arguments 
+Positional and named arguments/parameters 
+In general, function paraments and arguments are a key concept 
+ 
+Positional : The position of an argument determines which parameter receives the values (a+b) 
+Named: The name of an argument determines which parameter receives the value(a+b) 
+ 
+Besides the different usage, there’s one very important difference between positional nd named arguments. By default positional parameters are required must not be omitted.  
+ 
+ 
+Main.dart  
+Add import ‘package:flutter/material.dart’ 
+Add void main(){ 
+	runApp(MaterialApp(home: Text())); 
+} 
+ 
+Text  
+String:Data { data, { Key? Key, TextStyle? Style, StrutStyle? StrutStyle, TextAlign? TextAlign, TextDirection?
 
