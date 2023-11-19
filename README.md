@@ -2,7 +2,7 @@ Salman Hasan
 11/17/2023 
 
 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/37130480#overview
-1 year development [Learn about flutter for one year]  
+1 year development [Learn flutter for one year]  
  
 Flutter Development [Web development, iPhone, Android Development]- 301 days (about 10 months) 
 Helps me create templates and think of concepts that I can use in the future. Cross dimensional app so this helps me generate an app on both iOS and android and maybe when I'm 35 I can have an app on android and apple 
