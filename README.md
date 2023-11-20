@@ -203,5 +203,142 @@ Add void main(){
 } 
  
 Text  
-String:Data { data, { Key? Key, TextStyle? Style, StrutStyle? StrutStyle, TextAlign? TextAlign, TextDirection?
-
+String:Data { data, { Key? Key, TextStyle? Style, StrutStyle? StrutStyle, TextAlign? TextAlign, TextDirection? TextDirection 
+home: Text(‘’)) 
+Hello World 
+runApp(MaterialApp(home:Text(‘Hello World!’)) 
+Make sure that the text(‘Hello World!’) and add to materialapp 
+Blue Squiggly line has to do with material 
+import ‘package:flutter/material.dart’ 
+ 
+What is const? 
+Const helps Dart optimize runtime performance 
+Const Text(‘Hello World!’) -> Defined & used for the first time in the app 
+Device Memory add text widget(‘A) 
+Memory gets reused 
+ 
+ 
+ 
+ 
+Build More Complex Widget Trees  
+import ‘package:flutter/material.dart’ 
+void main(){ 
+	runApp( 
+		const MaterialApp( 
+			home: Scaffold( 
+				body: Center( 
+					child: Text(‘Hello World’) 
+	),), ), 
+); 
+} 
+ 
+Scaffold class is a widget implementing the basic material design visual layout structure 
+This class provides APIs for showing drawers and bottom sheets. 
+ 
+To center the text can use another screen, the center widget 
+To center the widget can use refactor and then wrap with center 
+ 
+Understanding Value Types 
+Dart is a type-safe language- (All values are of certain Types) 
+‘Hello World!’ -> String 
+29-> Int 
+Material App-> Material App 
+ 
+Object-> More than one type is possible & common 
+Num [Object] 
+Widget [Object] 
+ 
+Built-In, third-party & custom types 
+ 
+main.dart 
+import ‘package:flutter/material.dart’ 
+runApp( 
+	const MaterialApp( 
+		home: Scaffold( 
+			body:Center( 
+				child: Text(MaterialApp), 
+				) 
+			)		) 
+	) 
+) 
+ 
+Text(MaterialApp)-> child  
+29-> child 
+Int- Integer numbers 
+Double- Fractional numbers 
+Num- Integer or fractional numbers 
+String- Text 
+Bool- Boolean values 
+Object- Any kind of object 
+ 
+Configuring Widgets & Understanding Objects 
+Object import ‘package: flutter/material’ 
+import ‘package: flutter/material.dart’ 
+void main(){ 
+	runApp( 
+	const MaterialApp( 
+		home: Scaffold( 
+			body: Center( 
+				child: Text(‘Hello World’) 
+			) 
+		) 
+	) 
+) 
+) 
+} 
+ 
+Import the background color: null, 
+backgroundColor: Color(), 
+ 
+Widgets are objects 
+Widgets = objects = data structures in memory 
+ 
+Working with “Configuration Objects” 
+A color gradient is a transition between two or more colors. For example dark purple to purple, green to red etc 
+Add another new widget on Scaffold 
+In this format, going to add decoration add gradient and add colors 
+Decoration: BoxDecoration(Various decorations to the container) 
+Gradient: LinearGradient() 
+Colors: TBD 
+ 
+Generics Listing and Adding Gradients  
+List<Color> [List of values] (Not single value and multiple values) 
+colors: Generic Type are “flexible types” that “work together” with other types 
+Cooking Sports Reading, 5.91 3.87 1.21 
+Colors: [Color.fromARGB(255,26,2,80), Color.fromARGB(255,26,2,80) 
+Color.fromARGB(255,45,7,98) 
+ 
+ 
+ 
+How to configure widgets & objects 
+Add a widget that goes left to right 
+Begin: Alignment.top 
+end: Alignment.bottom 
+ 
+This changes the gradient and aligns it the right way 
+ 
+Styling Text 
+Change the style text widget. 
+-> Change the text color to “white” 
+-> Change the text font size to 28 
+ 
+Add style:  
+child: const Center( 
+child: Text( 
+'Hello World!', 
+style: TextStyle( 
+ 
+ 
+Building Custom Widgets 
+class GradientContainer  
+Create a class that shows what is important and what isn’t important 
+ 
+class GradientContainer  extends StatelessWidget { (inherit from statelesswidget) { 
+     @override (Overrides a widget and then adds custom functionalities) 
+      Widget  build () {} -> Methods and just a function [Build must return a widget to use] 
+      build needs to have a ctx or context and need to use flutter to execute a parameter 
+      return used by flutter  
+		 
+        } 
+} 
+ 
