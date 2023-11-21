@@ -10,14 +10,6 @@ Jobs I can work
 Full Stack Developer  
 Web 3.0/NextJS/ReactJS/React Native/Flutter/etc... 
  
-UNGUARDED 
-Business [Marketing/Supply chain/Finance etc.] 
-Content Creator [Start to finish] 
-Basketball Trainer/Lifting Trainer 
- 
- 
- 
- 
  
 Getting Flutter Installed  
 1.Click MacOS  
