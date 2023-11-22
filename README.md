@@ -11,6 +11,8 @@ Full Stack Developer
 Web 3.0/NextJS/ReactJS/React Native/Flutter/etc... 
  
  
+ 
+ 
 Getting Flutter Installed  
 1.Click MacOS  
 2.Must have git installed, and must have XCode installed as well 
@@ -316,8 +318,12 @@ Change the style text widget.
  
 Add style:  
 child: const Center( 
+
 child: Text( 
+
 'Hello World!', 
+
+ 
 style: TextStyle( 
  
  
@@ -330,7 +336,189 @@ class GradientContainer  extends StatelessWidget { (inherit from statelesswidget
       Widget  build () {} -> Methods and just a function [Build must return a widget to use] 
       build needs to have a ctx or context and need to use flutter to execute a parameter 
       return used by flutter  
-		 
-        } 
+		        } 
 } 
+ 
+ 
+Working with constructor functions 
+Constructors for public widgets should have a named ‘key’ parameter.  
+Adding a constructor function is quiet straight forward and add gradientContainer() 
+GradientContainer(a,b) 
+Named cant have a gradient container ({key}) 
+class GradientContainer extends Stateless Widget { 
+	GradientContainer({key}); 
+} 
+(GradientContainer({key})}- > adds to gradientContainer extends Stateless Widget 
+GradientContainer({key});; 
+Variable initilization work  
+super(); -> Super refers to the parent class(StatelessWidget in this case) 
+The super class extends to the stateless widget.key 
+Using optimization key of class 
+ 
+Splitting Code Across Files 
+Gradient_container.dart  
+import ‘package:flutter/material.dart’  
+Have to make sure that the file can be imported in main.dart and gradient_container.dart 
+ 
+Custom Widget 
+Create a separate widget for this text spot 
+Formatting the widgets are important, example putting them in gradient_container.dart 
+Create a new file in library 
+In these packages add basics/styled_text.dart and call the function.  
+When separating widgets in flutter must have styled_text 
+ 
+Variables 
+variables are data containers 
+
+Working a lot of values and main.dart and gradient_container.dart 
+More complex the file gets the more little tweaks can help 
+Variables are Data Containers 
+var greetingText = “Hello World” 
+variable declartion and assignment operator value(Text/String) 
+var startAlignment = Alignment.topLeft; 
+var endAlignment = Alignment.bottomRight 
+variables clean up the code 
+Data variables that add start alignment and can store data and then can use these variables multiple time whenever I want 
+Const improves the quality of the code and makes faster so use it for color 
+ 
+Variables & Types 
+var startAlignment; 
+var endAlignment = Alignment.bottomRight; 
+ 
+startAlignment= Alignment.topLeft; 
+endAlignment = Alignment.bottomRight;; 
+ 
+ 
+Instances 
+For custom texts add string text  
+Add Widget build(context) 
+Building custom text with styledtext(string text, {super.key}) 
+String outputText; and add override 
+this keyword provided by dart, parts of this.text( 
+These components are styled in a way where you store a key then declare what the variable is 
+StyledText(this.text, {super.key}) 
+String text; [Can add final String text]  
+const TextStyle( 
+	color: Colors.white, 
+	fontSize:28 
+) 
+ 
+When adding the const styledText(this.text,{super.key}) 
+String Text; [Can add final String text] 
+const TextStyle( 
+	color: Colors.white, 
+	fontSize:28 
+) 
+ 
+Practice Reusable widgets 
+ 
+import 'package:first_app/styled_text.dart'; 
+
+import 'package:flutter/material.dart'; 
+
+const startAlignment = Alignment.topLeft; 
+
+const endAlignment = Alignment.bottomRight; 
+
+class GradientContainer extends StatelessWidget { 
+
+const GradientContainer(this.color1, this.color2, {super.key}); 
+
+final Color color1; 
+
+final Color color2; 
+
+@override 
+
+Widget build(context) { 
+
+return Container( 
+
+decoration: BoxDecoration( 
+
+gradient: LinearGradient( 
+
+colors: [color1, color2], 
+
+begin: startAlignment, 
+
+end: endAlignment), 
+
+), 
+
+child: const Center(child: StyledText('UNGUARDED')), 
+
+); 
+
+} 
+
+} 
+
+ 
+import 'package:first_app/gradient_container.dart'; 
+
+import 'package:flutter/material.dart'; 
+
+void main() { 
+
+runApp( 
+
+const MaterialApp( 
+
+home: Scaffold( 
+
+body: GradientContainer(Color.fromARGB(255, 232, 184, 28), 
+
+Color.fromARGB(255, 232, 184, 28)), 
+
+), 
+
+), 
+
+); 
+
+} 
+ 
+Image & Multiple Constructor Functions 
+Child: Image.asset(‘assets/image’) 
+Add assets to the images and then add child image.asset(‘assets/image’) 
+pubspec.yaml add the images 
+child: Image.asset( 
+
+'assets/images/dice-2.png', 
+
+width: 200, 
+
+ 
+Adding Buttons & Using Functions As Values 
+What do I want to do if I want to provide bunch of widgets 
+Column()  
+Column and row can be used to place multiple child widgets next to each other 
+Column, Row 
+Want images vertically so column becomes the right choice 
+child: Center( 
+	child: Column(children: [Image.asset(‘assets/images/dice-2.png’, width:200, 
+	) 
+] 
+ 
+This helps the Image.asset(assets/images/dice-2.png 
+Add TextButton(onPressed: onPressed, child: const Text(‘Roll Dice),) 
+onPressed: rollDice(), 
+void rollDice(){ 
+ 
+} 
+ 
+Styling Templates 
+Column widget takes vertical space 
+mainAxisSize: MainAxisSize.min [Vertical access min and max values] (max as much space as possible) 
+style:  TextButton.styleFrom(various arguments with foreground Color: Colors:white, textStyle: TextStyle( 
+fontSize:28, 
+))  
+Two ways to add padding: const EdgeInsets.only(top:20))  
+const SizedBox(heightL20), 
+ 
+ 
+ 
+ 
+
  
