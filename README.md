@@ -516,6 +516,140 @@ fontSize:28,
 ))  
 Two ways to add padding: const EdgeInsets.only(top:20))  
 const SizedBox(heightL20), 
+
+Gradient Container Dart 
+Add a function for roll dice 
+var activeDiceImage = ; 
+Set the image path to activeDiceImage 
+void rollDice(){ 
+	activeDiceImage= ‘assets/images/dice-4.png; 
+	print(); 
+} 
+Image.asset( 
+activeDiceImage, 
+width: 200, 
+), 
+ 
+In materialApp remove const  
+const Color.fromARGB 
+const Color.fromARGB 
+ 
+Add print(‘’Changing image...’); 
+ 
+Stateful Widgets 
+Create.a statefulwidget  
+Stateful widget-> Allows to manage state inside of them 
+Dice_roller.dart add new file  
+import ‘package:flutter/material.dart’ 
+class _DiceRollerState extends State<DiceRoller> { 
+	build(){} 
+ 
+} 
+@override 
+Widget build(context){ 
+ 
+} 
+} 
+Widget build(context){ 
+ 
+} 
+} 
+const DiceRoller({super.key});  
+Image.asset( 
+activeDiceImage, 
+width:200, 
+), 
+ 
+DiceRoller({super.key}) [Stateful Widget] 
+Take variable of activeDiceImage, rollDice = ‘assets/images/dice-2.png’ 
+rollDice() activeDiceImage = ‘assets/images/dice-4.png’ 
+Have to add const GradeintContainer 
+Have to add const GradientContainer 
+ 
+child: Center( 
+	child: DiceRoller() 
+import ‘package:basics/dice_roler.dart’ 
+class _DiceRollerState extends State<DiceRoller> 
+var activeDiceImage= ‘assets/images/dice-2.png’ 
+rollDice() [setState((){}); 
+Updating activeDiceImage 
+Basically have to set state to create active dice image 
+ 
+Generating Random Numbers 
+import ‘dart: math’ 
+void rollDice(){ 
+Random() .nextInt(6) +1; //0<>5 
+var Random().nextInt(6) 
+var diceRoll = Random().nextInt(6)+1 
+Have to add a dollar sign dice-$diceRoll.png 
+ 
+Image: asset [ 
+‘assets/images/dice-$currentDiceRoll.png’ 
+ 
+ 
+ 
+ 
+ 
+Overview 
+Main Dart file with an empty project, first file when your main.Dart starts [First file this is the base] 
+Dart reads the file and then compiles it to the native iOS and machine 
+Then the code is played on the simulator 
+Main.dart  
+Dart allows to create functions and then add to the next section 
+Can use functions with void main() {  
+runApp( 
+	const MaterialApp( 
+		home: Scaffold( 
+			body: GradientContainer( 
+				Color.fromARGB 
+				Color.fromARGB 
+			) 
+		  ) 
+		) 
+) 
+) 
+ 
+RunApp provided by flutter and provided by runApp 
+Main function gets executed automatically 
+runApp should be called inside of main() 
+Pass the to-be-displayed to widget tree to runApp() 
+ 
+Flutter is all about widgets 
+Flutter UIs are created by combining & nesting Widgets 
+OutlinedButton-Text, Start Quiz [Flutter provides many built-in Widgets] 
+You can also build your own Widgets 
+Dart is an object-oriented language 
+Primitive Values / More Complex Values 
+	Text-> ‘Hello World’ 
+	Numbers-> ‘Numbers’ 
+ 
+More Complex Values 
+	Widgets, Gradient Config Object 
+ 
+Everything is an object, but created on blueprint: Classes more complex version of an object 
+Object is a data structure stored in computer memory 
+Object store Data [Variables/properties] 
+Functions [Methods] 
+Create data and functions to group together in one data structure 
+Dart is a type-safe language, All values are of a certain type 
+‘Hello World!’ -> String 
+29 -> Int 
+MaterialApp -> MaterialApp 
+Can be an object, number, widget, object and object etc 
+Stateless vs Stateful Widgets 
+Stateless don’t manage any internal data, Only update parent widgets were updated which is a state widget 
+Stateful Widgets-> Do manage internal data(“state”) 
+Stateful Widget to Stateless Widgets 
+StatefulWidget and another state class work together to create the function 
+ 
+Things to watch out for 
+When to use stateful widget  
+Stateful widget has a smaller key 
+Stateless has only one class 
+ 
+When to use gradient container and gradient container  
+
+
  
  
  
